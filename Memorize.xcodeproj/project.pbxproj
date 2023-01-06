@@ -41,7 +41,6 @@
 		7F991387295BE7BB005BDF07 = {
 			isa = PBXGroup;
 			children = (
-				7F0083EA2966966B003CC9DA /* Theme.swift */,
 				7F991392295BE7BB005BDF07 /* Memorize */,
 				7F991391295BE7BB005BDF07 /* Products */,
 			);
@@ -60,6 +59,7 @@
 			children = (
 				7F991393295BE7BB005BDF07 /* MemorizeApp.swift */,
 				7F991395295BE7BB005BDF07 /* ContentView.swift */,
+				7F0083EA2966966B003CC9DA /* Theme.swift */,
 				7F0083E62963EDBA003CC9DA /* MemoryGame.swift */,
 				7F0083E829654445003CC9DA /* EmojiMemoryGame.swift */,
 				7F991397295BE7BC005BDF07 /* Assets.xcassets */,
