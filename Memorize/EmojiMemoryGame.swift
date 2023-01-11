@@ -15,6 +15,8 @@ class EmojiMemoryGame: ObservableObject{
         model = EmojiMemoryGame.createMemoryGame(theme: theme)
     }
     
+    typealias Card = MemoryGame<String>.Card
+    
     static var themes: Array<Theme> = [
         Theme(name: "Vehicles",
               emojis: ["🚗", "🚕", "🚌", "🚎", "🏎", "🚓", "🚑", "🚒", "🚐", "🚚", "🚛", "🚜", "🏍", "🚲", "🛵", "🚨", "🚔", "🚍", "🚘", "🚖", "🚡", "🚠", "🚟", "🚃"],
@@ -74,13 +76,13 @@ class EmojiMemoryGame: ObservableObject{
         return model.score
     }
     
-    var cards: Array<MemoryGame<String>.Card>{
+    var cards: Array<Card>{
         return model.cards
     }
     
     // MARK: - Intent(s)
     
-    func choose(_ card: MemoryGame<String>.Card){
+    func choose(_ card: Card){
             model.choose(card)
     }
     
